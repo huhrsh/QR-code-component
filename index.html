@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    html{
+      background: hsl(220, 15%, 55%);
+      background: hsl(212, 45%, 89%);
+    }
+    .outer-div{
+      box-shadow: 4px 4px 4px hsl(220, 15%, 55%);
+      border-radius: 10px;
+      padding: 10px;
+      background-color: white;
+      margin: auto;
+      margin-top: 7%;
+      margin-bottom:2% ;
+      /* text-align: center; */
+      width: 20vw;
+      height: auto;
+    }
+    .qr{
+      width: 100%;
+      height: auto;
+    }
+    .qr img{
+      border-radius: 10px;
+      width: 100%;
+    }
+    .first-line,.second-line{
+      font-size: 18px;
+      font-family: outfit;
+      font-weight: 700;
+      text-align: center;
+    }
+    .second-line{
+      color: hsl(220, 15%, 55%);
+      font-weight: 400;
+      font-size: 15px;
+    }
+    @media screen and (max-width:600px){
+      .outer-div{
+        padding: 10px;
+        margin-top: 20%;
+        margin-bottom: 5%;
+        width: 70vw;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="outer-div" >
+    <div class="qr">
+      <img src="./images/image-qr-code.png">
+    </div>
+    <p class="first-line">Improve your front-end skills by building projects</p>
+  
+    <p class="second-line">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+  </div>
+  
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
